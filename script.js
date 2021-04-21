@@ -17,9 +17,9 @@ let playerTwoChoice = function (choice) {
   }
 
   if (
-    (p1Choice === 'p' && p2Choice === 'p') ||
-    (p1Choice === 'r' && p2Choice === 'r') ||
-    (p1Choice === 's' && p2Choice === 's')
+    (p1Choice === 's' && p2Choice === 'p') ||
+    (p1Choice === 'p' && p2Choice === 'r') ||
+    (p1Choice === 'r' && p2Choice === 's')
   ) {
     console.log('P2 wins')
     document.getElementById("text-winner").innerText = "Player 2 wins"
