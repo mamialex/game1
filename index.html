@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scisors</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main-div {
+        display: flex;
+        justify-content: space-around;
+      }
+      .title-div {
+        text-align: center;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+      }
+      .cursor-pointer {
+        text-align: center;
+        color: aquamarine;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-div"><h1>Rock Paper Scisors</h1></div>
+    <div class="main-div">
+      <div class="left-side">
+        <img src="./img/paper.png" onclick="playerOneChoice('p')" alt="" />
+        <img src="./img/rock.png" onclick="playerOneChoice('r')" alt="" />
+        <img src="./img/scisors.png" onclick="playerOneChoice('s')" alt="" />
+      </div>
+      <div class="right-side">
+        <img src="./img/paper.png" onclick="playerTwoChoice('p')" alt="" />
+        <img src="./img/rock.png" onclick="playerTwoChoice('r')" alt="" />
+        <img src="./img/scisors.png" onclick="playerTwoChoice('s')" alt="" />
+      </div>
+      <h1 id="text-winner"></h1>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
